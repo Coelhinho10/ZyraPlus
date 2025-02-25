@@ -1,0 +1,18 @@
+{
+  "name": "zyraplus",
+  "version": "0.0.1",
+  "description": "Uma biblioteca de utilitários para facilitar o desenvolvimento.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/index.test.js"
+  },
+  "keywords": [
+    "utilitários",
+    "ferramentas",
+    "zyraplus",
+    "nodejs"
+  ],
+  "author": "Coelhinho",
+  "license": "MIT"
+}
