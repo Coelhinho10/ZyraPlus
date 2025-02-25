@@ -1,1 +1,5 @@
-export * from "./utils.js";
+import abbreviate from "./functions/abbreviate.js";
+
+export default {
+    abbreviate
+};
