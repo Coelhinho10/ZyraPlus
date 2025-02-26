@@ -1,11 +1,17 @@
-# <p align="center">🍃 ZyraPlus</p>  
+# <h1 align="center">🍃 ZyraPlus</p>  
 
-**ZyraPlus** é uma biblioteca de utilitários projetada para tornar o desenvolvimento em **Node.js** mais fácil e eficiente. Com funções simples e otimizadas, ela ajuda a melhorar a produtividade e a manter seu código mais limpo e organizado.  
+**ZyraPlus** is a utility library designed to make **Node.js** development easier and more efficient. With simple and optimized functions, it helps improve productivity and keep your code clean and organized.  
 
-## 📦 Instalação  
+## 📦 Installation  
 
-Para instalar a ZyraPlus, utilize o seguinte comando:  
+To install ZyraPlus, use the following command:  
 
 ```sh
 npm install zyraplus
 ```
+
+# 🚀 Features
+
+ZyraPlus includes various utility functions to simplify your development. Here are some of the available functions:
+
+- abbreviate(number): Converts large numbers into a shorter format (e.g., 1000 → "1k").
