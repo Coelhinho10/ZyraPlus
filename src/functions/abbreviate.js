@@ -1,4 +1,4 @@
-export function abbreviate(number) {
+export default function abbreviate(number) {
     if (typeof number !== "number" || isNaN(number)) {
         throw new Error("[ZyraPlus] - The parameter <number> must be a valid number!");
     }
