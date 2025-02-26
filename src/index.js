@@ -1,5 +1,5 @@
 import abbreviate from "./functions/abbreviate.js";
 
-export default {
+export {
     abbreviate
 };
