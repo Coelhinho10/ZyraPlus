@@ -11,13 +11,13 @@ class CooldownManager {
    */
   startCooldown(userId, action, time) {
     if (!userId || typeof userId !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
     }
     if (!action || typeof action !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
     }
     if (!time || typeof time !== "number" || time <= 0) {
-      throw new Error("[ZyraPlus] - The parameter <time> must be a positive number!");
+      return new Error("[ZyraPlus] - The parameter <time> must be a positive number!");
     }
 
     if (!this.cooldowns.has(userId)) {
@@ -34,10 +34,10 @@ class CooldownManager {
    */
   isOnCooldown(userId, action) {
     if (!userId || typeof userId !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
     }
     if (!action || typeof action !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
     }
 
     if (!this.cooldowns.has(userId)) return false;
@@ -54,10 +54,10 @@ class CooldownManager {
    */
   getRemainingCooldown(userId, action) {
     if (!userId || typeof userId !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
     }
     if (!action || typeof action !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
     }
 
     if (!this.isOnCooldown(userId, action)) return 0;
@@ -71,10 +71,10 @@ class CooldownManager {
    */
   clearCooldown(userId, action) {
     if (!userId || typeof userId !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <userId> must be a valid string!");
     }
     if (!action || typeof action !== "string") {
-      throw new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
+      return new Error("[ZyraPlus] - The parameter <action> must be a valid string!");
     }
 
     if (this.cooldowns.has(userId)) {
