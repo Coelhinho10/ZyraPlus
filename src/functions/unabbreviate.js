@@ -1,10 +1,10 @@
 export default function unabbreviate(number) {
   if (!number) {
-    throw new Error("[ZyraPlus] - The parameter <number> must be defined!");
+    return new Error("[ZyraPlus] - The parameter <number> must be defined!");
   }
 
   if (typeof number !== "string") {
-    throw new Error("[ZyraPlus] - The parameter <number> must be a string!");
+    return new Error("[ZyraPlus] - The parameter <number> must be a string!");
   }
 
   const symbols = {
@@ -23,7 +23,7 @@ export default function unabbreviate(number) {
 
   const match = number.match(/^([\d.]+)([a-zA-Z]*)$/);
   if (!match) {
-    throw new Error("[ZyraPlus] - Invalid format for <number>!");
+    return new Error("[ZyraPlus] - Invalid format for <number>!");
   }
 
   const value = parseFloat(match[1]);
