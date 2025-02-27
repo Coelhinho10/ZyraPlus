@@ -1,6 +1,6 @@
 {
   "name": "zyraplus",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Uma biblioteca de utilitários para facilitar o desenvolvimento.",
   "main": "src/index.js",
   "type": "module",
